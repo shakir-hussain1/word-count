@@ -1,6 +1,6 @@
 #! /usr/bin/env node 
 
-console.log(chalk.bgYellow.black.underline("WELCOME TO WORDS COUNT APP"))
+console.log(chalk.bgYellow.black.underline("WELCOME TO MY WORDS COUNT PROJECT"))
 
 import inquirer from "inquirer" 
 import chalk from "chalk"
@@ -23,4 +23,5 @@ const words = answers.Sentence.trim().split(" ")
 
 console.log(chalk.blue(words))
 
-console.log(chalk.green(`You have ${words.length} words in your sentence which you entered.`));
+console.log(chalk.green(`You have entered a sentence having ${words.length} words.`));
+console.log(chalk.magenta("Thanks for your interest"));
